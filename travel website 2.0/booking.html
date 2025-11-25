@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Sunset Travels | Booking Estimator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<nav id="navbar">
+    <h1 class="logo"> Sunset Travels</h1>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="booking.html" class="active">Booking</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero pastel-sunset">
+    <h2>Booking & Price Estimator</h2>
+    <p>Plan your dream sunset vacation</p>
+</header>
+
+<section class="container">
+    <h2>Calculate Your Trip</h2>
+
+    <form id="bookingForm" class="booking-form">
+        
+        <label>Choose Package</label>
+        <select id="packageSelect" required>
+            <option value="">Select a package</option>
+        </select>
+
+        <label>Check-in Date</label>
+        <input type="date" id="checkIn" required>
+
+        <label>Check-out Date</label>
+        <input type="date" id="checkOut" required>
+
+        <label>Number of Guests</label>
+        <input type="number" id="guests" min="1" placeholder="1" required>
+
+        <label>Promo Code (optional)</label>
+        <input type="text" id="promo" placeholder="EARLYBIRD">
+
+        <p class="total-label">Estimated Total:  
+            <span id="totalPrice">₹0</span>
+        </p>
+
+        <button type="submit" id="submitBtn">Book Now</button>
+    </form>
+</section>
+
+</body>
+</html>
+

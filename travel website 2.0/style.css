@@ -1,0 +1,296 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #fff9f7;
+    color: #4a3f41;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+h1, h2, h3 {
+    color: #e66a6a;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+
+
+#navbar {
+    background: linear-gradient(90deg, #e2696d, #fcbad3, #ffdde1);
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(214, 65, 65, 0.3);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #90405d;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #874c62;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #ffdde1;
+    box-shadow: 0 0 10px #ffc7d5;
+}
+
+
+
+
+.pastel-sunset {
+    background: linear-gradient(#ffb6b9, #fcbad3, #ffdde1);
+    padding: 70px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #874c62;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+
+
+.travel-video {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(252, 186, 211, 0.4);
+    margin-top: 10px;
+}
+
+
+
+.package-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(250, 180, 180, 0.2);
+}
+
+.package-table th {
+    background: #ffb6b9;
+    padding: 12px;
+    color: #fff;
+}
+
+.package-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ffe4ec;
+}
+
+.package-table tr:hover {
+    background: #fff0f5;
+}
+
+
+
+
+.booking-form {
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(255, 150, 150, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #ffc0c9;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.booking-form button {
+    padding: 12px;
+    border: none;
+    background: #ff9eb5;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background: #ff7f9f;
+    box-shadow: 0 0 10px #ffb6c1;
+}
+
+.total-label {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(252, 186, 211, 0.5);
+    transition: 0.3s;
+}
+
+.thumb:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 228, 236, 0.7);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 60%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(252, 150, 170, 0.4);
+}
+
+.modal-caption {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 18px;
+    color: #874c62;
+}
+
+.close-btn {
+    font-size: 40px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    color: #874c62;
+}
+
+
+
+
+
+.contact-box {
+    background: #fff0f5;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(255, 150, 150, 0.3);
+}
+
+.social-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-list li a {
+    color: #e66a7a;
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    text-decoration: underline;
+}
+
+.faq-list {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+
+
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 10px 15px;
+    background: #ff9eb5;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+}
